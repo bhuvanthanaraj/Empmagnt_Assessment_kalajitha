@@ -1,0 +1,43 @@
+﻿@model Empmagnt_Assessment.Models.EmployeeSalaryDetails
+@{
+}
+
+<h3>Edit Employee page</h3>
+<form method="post" action="ViewUpdate" class="mt-4">
+
+    <div class="mb-3">
+        <label class="form-label">EmpCode</label>
+        <input type="text" class="form-control" id="EmpCode" asp-for="EmpCode" Readonly />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">BasicPay</label>
+        <input type="tenumberxt" class="form-control" id="BasicPay" asp-for="BasicPay" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">DA</label>
+        <input type="number" class="form-control" id="DA" asp-for="DA" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">HRA</label>
+        <input type="number" class="form-control" id="HRA" asp-for="HRA" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">OtherAllowances</label>
+        <input type="number" class="form-control" id="OtherAllowances" asp-for="OtherAllowances" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Deductions</label>
+        <input type="number" class="form-control" id="Deductions" asp-for="Deductions" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">GrossPay</label>
+        <input type="number" class="form-control" id="GrossPay" asp-for="GrossPay" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Salary Datails</button>
+
+</form>

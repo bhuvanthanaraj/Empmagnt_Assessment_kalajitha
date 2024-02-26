@@ -1,0 +1,72 @@
+﻿@model Empmagnt_Assessment.Models.EmployeeInfo
+@{
+}
+
+
+<h3>Add Employee page</h3>
+<form method="post" action="AddEmp" class="mt-4">
+
+    <div class="mb-3">
+        <label class="form-label">EmpCode</label>
+        <input type="text" class="form-control" id="EmpCode" asp-for="EmpCode" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">FirstName</label>
+        <input type="text" class="form-control" id="FirstName" asp-for="FirstName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">LastName</label>
+        <input type="text" class="form-control" id="LastName" asp-for="LastName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">DOB</label>
+        <input type="date" class="form-control" id="DOB" asp-for="DOB" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Age</label>
+        <input type="text" class="form-control" id="Age" asp-for="Age" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">DOJ</label>
+        <input type="date" class="form-control" id="DOJ" asp-for="DOJ" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" id="Email" asp-for="Email" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">MobileNumber</label>
+        <input type="number" class="form-control" id="MobileNumber" asp-for="MobileNumber" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">DeptCode</label>
+        <input type="text" class="form-control" id="DeptCode" asp-for="DeptCode" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" id="Address" asp-for="Address" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">City</label>
+        <input type="text" class="form-control" id="City" asp-for="City" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">State</label>
+        <input type="text" class="form-control" id="State" asp-for="State" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Add Employee</button>
+
+</form>

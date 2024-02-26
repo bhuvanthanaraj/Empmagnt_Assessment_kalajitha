@@ -1,0 +1,46 @@
+﻿@model List<Empmagnt_Assessment.Models.EmployeeSalaryDetails>
+@{
+}
+
+<h1>Salary Details</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>EMP Code</th>
+            <th>Basic Pay</th>
+            <th>DA</th>
+            <th>HRA</th>
+            <th>Other Allowances</th>
+            <th>Deductions</th>
+            <th>GrossPay</th>
+            <th></th>
+           
+
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @foreach (var localvar in Model)
+        {
+            <tr>
+                <td>@localvar.EmpCode</td>
+                <td>@localvar.BasicPay</td>
+                <td>@localvar.DA</td>
+                <td>@localvar.HRA</td>
+                <td>@localvar.OtherAllowances</td>
+                <td>@localvar.Deductions</td>
+                <td>@localvar.GrossPay</td>
+                <td><a href=EditSal/@localvar.Id>Edit</a></td>
+           
+
+            </tr>
+        }
+
+
+    </tbody>
+
+
+</table>

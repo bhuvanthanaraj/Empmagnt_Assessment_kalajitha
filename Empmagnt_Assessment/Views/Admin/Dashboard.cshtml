@@ -1,0 +1,67 @@
+﻿@model List<Empmagnt_Assessment.Models.EmployeeInfo>
+@{
+}
+
+<div class="">
+    <a class="btn btn-primary" asp-area="" asp-controller="Admin" asp-action="AddEmpPage">Add Employee</a>
+
+    <a class="btn btn-primary" asp-area="" asp-controller="Admin" asp-action="GetSalDetails">Salary Details</a>
+
+</div>
+
+
+
+
+
+
+<h1>Emplyoee Details</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>EMP Code</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>DOB</th>
+            <th>Age</th>
+            <th>DOJ</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Dept Code</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+
+        @foreach (var localvar in Model)
+        {
+            <tr>
+                <td>@localvar.EmpCode</td>
+                <td>@localvar.FirstName</td>
+                <td>@localvar.LastName</td>
+                <td>@localvar.DOB</td>
+                <td>@localvar.Age</td>
+                <td>@localvar.DOJ</td>
+                <td>@localvar.Email</td>
+                <td>@localvar.MobileNumber</td>
+                <td>@localvar.DeptCode</td>
+                <td>@localvar.Address</td>
+                <td>@localvar.City</td>
+                <td>@localvar.State</td>
+
+                
+
+
+            </tr>
+        }
+
+
+    </tbody>
+
+
+</table>
