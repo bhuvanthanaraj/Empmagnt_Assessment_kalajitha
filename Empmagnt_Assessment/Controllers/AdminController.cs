@@ -103,6 +103,14 @@ namespace Empmagnt_Assessment.Controllers
         }
 
 
+        [HttpGet]
+
+        public async Task<IActionResult> Getname()
+        {
+            var localvar = await dataDbContext.EmployeeSalaryDetails.FromSqlRaw("EXEC Showname").ToListAsync();
+            return View(localvar);
+        }
+
 
 
 
